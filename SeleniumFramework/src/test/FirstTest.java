@@ -13,7 +13,7 @@ import webObjects.ManagerMenu;
 public class FirstTest extends TestBase
 {
 
-
+	@Test
 	public void firstTest() throws InterruptedException 
 	{
 		GuruFlows.GuruLoginFlow();
@@ -24,7 +24,7 @@ public class FirstTest extends TestBase
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void configTest() throws InterruptedException, FileNotFoundException, IOException 
 	{
 		GuruLoginPage page = new GuruLoginPage();

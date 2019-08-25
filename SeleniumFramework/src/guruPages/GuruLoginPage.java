@@ -64,7 +64,7 @@ public class GuruLoginPage extends StartWebDriver
 		}
 		user = "mngr21103"+ number;
 		keyUser = "user"+ number;
-		File file = new File("C:\\Users\\Velasco Solano\\eclipse-workspace\\SeleniumFramework\\src\\executables\\credentials.properties");
+		File file = new File(System.getProperty("user.dir")+"\\src\\executables\\credentials.properties");
 		propCredentials.setProperty(keyUser, user);
 		propCredentials.store(new FileOutputStream(file), "users");
 		return propCredentials.getProperty(keyUser);
@@ -72,7 +72,7 @@ public class GuruLoginPage extends StartWebDriver
 	
 	private List<String> getUserNPassword() 
 	{
-		String[] array = {"mngr211034","rUvYmuj"};
+		String[] array = {"mngr219316","AsunUzU"};
 		return Arrays.asList(array);
 	}
 	

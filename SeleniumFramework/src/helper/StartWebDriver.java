@@ -74,11 +74,11 @@ public class StartWebDriver
 			case IE:
 				DesiredCapabilities capabilities = new DesiredCapabilities();
 				capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-				System.setProperty("webdriver.ie.driver", "C:\\Users\\Velasco Solano\\eclipse-workspace\\SeleniumFramework\\src\\executables\\IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\executables\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver(capabilities);
 				break;
 			case CHROME:
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Velasco Solano\\eclipse-workspace\\SeleniumFramework\\src\\executables\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
 				break;
 			case FIREFOX:
